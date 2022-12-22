@@ -8,6 +8,7 @@ from typing import Sequence
 CRLF = b'\r\n'
 LF = b'\n'
 CR = b'\r'
+
 # Prefer LF to CRLF to CR, but detect CRLF before LF
 ALL_ENDINGS = (CR, CRLF, LF)
 FIX_TO_LINE_ENDING = {'cr': CR, 'crlf': CRLF, 'lf': LF}
